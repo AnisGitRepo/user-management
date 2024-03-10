@@ -1,7 +1,7 @@
 package com.management.user;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.management.CustomPostgresqlContainer;
+import com.management.IntegrationTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -12,7 +12,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 
-public class UserControllerIntegrationTest extends CustomPostgresqlContainer {
+public class UserControllerIntegrationTest extends IntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
